@@ -591,10 +591,10 @@ endif
 
 " }}}
 " Use local vimrc if availaible ------------------------------------------- {{{
-    if filereadable(expand("~/.vimrc.local"))
-        source ~/.vimrc.local
-    endif
     if filereadable(expand("~/.vim/.vimrc.local"))
         source ~/.vim/.vimrc.local
+    endif
+    if filereadable(expand("~/.vimrc.local"))
+        source ~/.vimrc.local
     endif
 " }))
