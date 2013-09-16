@@ -590,3 +590,8 @@ if has('gui_running')
 endif
 
 " }}}
+" Use local vimrc if availaible ------------------------------------------- {{{
+    if filereadable(expand("~/.vimrc.local"))
+        source ~/.vimrc.local
+    endif
+" }))
